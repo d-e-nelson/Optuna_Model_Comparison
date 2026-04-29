@@ -4,6 +4,6 @@ This project seeks to give a brief explination on what Optuna is and how it comp
 
 
 ## Resources
-Optuna Documentation: [Link](https://optuna.readthedocs.io/en/stable/)
+Optuna Documentation: [Link](https://optuna.readthedocs.io/en/stable/)<br>
 Optuna Dashboard: [Link](https://github.com/optuna/optuna-dashboard)
-)
+
