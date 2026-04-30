@@ -2,6 +2,24 @@
 
 This project seeks to give a brief explination on what Optuna is and how it compares to of of the more common hyperparameter tuning methods. The goal is to highlight the pros and cons of each method while putting a spotlight on the out of the box utility that Optuna offers. 
 
+## Interperting Result Scores
+The final reported scores for each model are in the formate of Exponential Root Mean Square Log Error.
+The predictions will be off by a factor of the score. 
+
+## Calculating the prediction range. 
+For this example we will use a resulting Exp RMSLE of 1.171
+
+### Calculate the upper bound:
+1.171 - 1 = 17.1%
+
+### Calculate the lower bound:
+1/1.171 = 0.8539
+1 - 0.8539 = 14.61%
+
+### Results:
+The results could fall within 17.1% above or 14.61% below the ideal prediction. 
+
+
 
 ## Resources
 Optuna Documentation: [Link](https://optuna.readthedocs.io/en/stable/)<br>
