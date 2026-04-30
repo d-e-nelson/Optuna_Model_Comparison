@@ -6,18 +6,21 @@ This project seeks to give a brief explination on what Optuna is and how it comp
 The final reported scores for each model are in the formate of Exponential Root Mean Square Log Error.
 The predictions will be off by a factor of the score. 
 
-## Calculating the prediction range. 
+### Calculating the confidence range. 
 For this example we will use a resulting Exp RMSLE of 1.171
 
-### Calculate the upper bound:
+#### Calculate the upper bound:
 1.171 - 1 = 17.1%
 
-### Calculate the lower bound:
+#### Calculate the lower bound:
 1/1.171 = 0.8539
 1 - 0.8539 = 14.61%
 
-### Results:
-The results could fall within 17.1% above or 14.61% below the ideal prediction. 
+### Calculate the Precentage-Based Error
+1.171 means you have a precentage based error of 17.1%, so between a range of 117.1 and 85.4 if the actual value was 100.
+
+### How to read this all together
+"Our model has an average error rate of 17.1%. Based on our confidence intervals, we expect this error to typically fluctuate between a lower bound of 14.6% and an upper bound of 17.1%."
 
 
 
